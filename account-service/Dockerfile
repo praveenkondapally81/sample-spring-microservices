@@ -1,4 +1,4 @@
-FROM openjdk
+FROM openjdk:17-slim
 MAINTAINER Piotr Minkowski <piotr.minkowski@gmail.com>
 ADD target/account-service.jar account-service.jar
 ENTRYPOINT ["java", "-jar", "/account-service.jar"]
